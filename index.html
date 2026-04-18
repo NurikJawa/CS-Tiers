@@ -1,0 +1,297 @@
+﻿<!doctype html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS Tiers | Ranking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Manrope:wght@400;500;700;800&family=Orbitron:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand-wrap">
+        <div class="brand-mark" aria-hidden="true">?</div>
+        <div>
+          <p class="brand-title">CS TIERS</p>
+          <p class="brand-subtitle">Competitive Rankings</p>
+        </div>
+      </div>
+
+      <div class="topbar-actions">
+        <button id="themeToggle" class="theme-btn" type="button" aria-label="Switch theme">
+          <span class="theme-icon" id="themeIcon">🌙</span>
+          <span id="themeLabel">Dark</span>
+        </button>
+      </div>
+    </header>
+
+    <nav class="mode-tabs" aria-label="Rank modes">
+      <button class="mode-tab is-active" data-tab-target="main" type="button" aria-label="Main" title="Main">
+        <img src="assets/icons/overall.svg" alt="" />
+      </button>
+      <button class="mode-tab" data-tab-target="awp" type="button" aria-label="AWP" title="AWP">
+        <img src="assets/icons/awp.svg" alt="" />
+      </button>
+      <button class="mode-tab" data-tab-target="rifle" type="button" aria-label="Rifle" title="Rifle">
+        <img src="assets/icons/rifle.svg" alt="" />
+      </button>
+      <button class="mode-tab" data-tab-target="deagle" type="button" aria-label="Deagle" title="Deagle">
+        <img src="assets/icons/deagle.svg" alt="" />
+      </button>
+      <button class="mode-tab" data-tab-target="usp" type="button" aria-label="USP" title="USP">
+        <img src="assets/icons/usp.svg" alt="" />
+      </button>
+      <button class="mode-tab" data-tab-target="duels" type="button" aria-label="Duels" title="Duels">
+        <img src="assets/icons/duel.svg" alt="" />
+      </button>
+    </nav>
+
+    <main class="content-grid">
+      <section class="hero-card">
+        <p class="kicker">Season 05 • CS2 5v5</p>
+        <h1>CS Player Rankings</h1>
+        <p>
+          Main shows global list: CD, HS%, and all weapon tiers.
+          Weapon tabs show separate tier ladders for each weapon.
+        </p>
+        <div class="hero-pills">
+          <span>CS2</span>
+          <span>Live Tier Grid</span>
+        </div>
+      </section>
+
+      <section class="meta-card">
+        <h2>Main Columns</h2>
+        <ul>
+          <li>Position + avatar</li>
+          <li>Nickname</li>
+          <li>Main rank</li>
+          <li>CD</li>
+          <li>AWP / Rifle / Deagle / USP / HS% / Trend</li>
+        </ul>
+      </section>
+
+      <section class="leaderboard tab-panel is-active" data-tab-panel="main">
+        <div class="leaderboard-head">
+          <h2>Main Top 10</h2>
+          <span>All weapon tiers + CD + HS% + Trend</span>
+        </div>
+
+        <ol class="rank-list">
+          <li class="rank-item tier-master">
+            <span class="pos pos-photo"><img src="Nurikkk.jpg" alt="Nurikkk" /><b>1</b></span><span class="nick">Nurikkk</span><span class="rank-tag rank-master">AWP MASTER</span><span class="kd">CD 2.3-3.1</span><span class="trend trend-none" aria-hidden="true"></span>
+            <span class="skills">
+              <span class="weapon-chip level-master"><img src="assets/icons/awp.svg" alt="AWP" /><i>M</i></span>
+              <span class="weapon-chip level-grandmaster"><img src="assets/icons/rifle.svg" alt="Rifle" /><i>GM</i></span>
+              <span class="weapon-chip level-grandmaster"><img src="assets/icons/deagle.svg" alt="Deagle" /><i>GM</i></span>
+              <span class="weapon-chip level-master"><img src="assets/icons/usp.svg" alt="USP" /><i>M</i></span>
+              <span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>34%</i></span>
+            </span>
+          </li>
+          <li class="rank-item tier-master">
+            <span class="pos pos-photo"><img src="soul.jpg" alt="Soul" /><b>2</b></span><span class="nick">Soul</span><span class="rank-tag rank-master">RIFLE MASTER</span><span class="kd">CD 1.5-2.8</span><span class="trend trend-none" aria-hidden="true"></span>
+            <span class="skills">
+              <span class="weapon-chip level-grandmaster"><img src="assets/icons/awp.svg" alt="AWP" /><i>GM</i></span>
+              <span class="weapon-chip level-master"><img src="assets/icons/rifle.svg" alt="Rifle" /><i>M</i></span>
+              <span class="weapon-chip level-master"><img src="assets/icons/deagle.svg" alt="Deagle" /><i>M</i></span>
+              <span class="weapon-chip level-grandmaster"><img src="assets/icons/usp.svg" alt="USP" /><i>GM</i></span>
+              <span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>21%</i></span>
+            </span>
+          </li>
+          <li class="rank-item tier-grandmaster">
+            <span class="pos pos-photo"><img src="oligarh.png" alt="Oligarh" /><b>3</b></span><span class="nick">Oligarh</span><span class="rank-tag rank-grandmaster">RIFLE GRANDMASTER</span><span class="kd">CD 1.4-2.4</span><span class="trend trend-down" aria-label="Down tier"></span>
+            <span class="skills">
+              <span class="weapon-chip level-intermediate"><img src="assets/icons/awp.svg" alt="AWP" /><i>INT</i></span>
+              <span class="weapon-chip level-grandmaster"><img src="assets/icons/rifle.svg" alt="Rifle" /><i>GM</i></span>
+              <span class="weapon-chip level-intermediate"><img src="assets/icons/deagle.svg" alt="Deagle" /><i>INT</i></span>
+              <span class="weapon-chip level-grandmaster"><img src="assets/icons/usp.svg" alt="USP" /><i>GM</i></span>
+              <span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>43%</i></span>
+            </span>
+          </li>
+          <li class="rank-item tier-grandmaster">
+            <span class="pos pos-photo"><img src="W1nters.png" alt="W1nters" /><b>4</b></span><span class="nick">W1nters</span><span class="rank-tag rank-grandmaster">RIFLE GRANDMASTER</span><span class="kd">CD 1.3-2.9</span><span class="trend trend-up" aria-label="Up tier"></span>
+            <span class="skills">
+              <span class="weapon-chip level-intermediate"><img src="assets/icons/awp.svg" alt="AWP" /><i>INT</i></span>
+              <span class="weapon-chip level-grandmaster"><img src="assets/icons/rifle.svg" alt="Rifle" /><i>GM</i></span>
+              <span class="weapon-chip level-grandmaster"><img src="assets/icons/deagle.svg" alt="Deagle" /><i>GM</i></span>
+              <span class="weapon-chip level-intermediate"><img src="assets/icons/usp.svg" alt="USP" /><i>INT</i></span>
+              <span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>32%</i></span>
+            </span>
+          </li>
+          <li class="rank-item tier-ace">
+            <span class="pos pos-photo"><img src="Zakon4ick.png" alt="Zakon4ick" /><b>5</b></span><span class="nick">Zakon4ick</span><span class="rank-tag rank-ace">RIFLE ACE</span><span class="kd">CD 1.1-2.3</span><span class="trend trend-up" aria-label="Up tier"></span>
+            <span class="skills">
+              <span class="weapon-chip level-grandmaster"><img src="assets/icons/awp.svg" alt="AWP" /><i>GM</i></span>
+              <span class="weapon-chip level-ace"><img src="assets/icons/rifle.svg" alt="Rifle" /><i>A</i></span>
+              <span class="weapon-chip level-intermediate"><img src="assets/icons/deagle.svg" alt="Deagle" /><i>INT</i></span>
+              <span class="weapon-chip level-ace"><img src="assets/icons/usp.svg" alt="USP" /><i>A</i></span>
+              <span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>25%</i></span>
+            </span>
+          </li>
+          <li class="rank-item tier-ace">
+            <span class="pos pos-photo"><img src="China.png" alt="China" /><b>6</b></span><span class="nick">China</span><span class="rank-tag rank-ace">AWP ACE</span><span class="kd">CD 1.0-2.2</span><span class="trend trend-none" aria-hidden="true"></span>
+            <span class="skills">
+              <span class="weapon-chip level-ace"><img src="assets/icons/awp.svg" alt="AWP" /><i>A</i></span>
+              <span class="weapon-chip level-ace"><img src="assets/icons/rifle.svg" alt="Rifle" /><i>A</i></span>
+              <span class="weapon-chip level-intermediate"><img src="assets/icons/deagle.svg" alt="Deagle" /><i>INT</i></span>
+              <span class="weapon-chip level-intermediate"><img src="assets/icons/usp.svg" alt="USP" /><i>INT</i></span>
+              <span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>19%</i></span>
+            </span>
+          </li>
+          <li class="rank-item tier-ace">
+            <span class="pos pos-photo"><img src="Abdurahmet.png" alt="Abdurahmet" /><b>7</b></span><span class="nick">Abdurahmet</span><span class="rank-tag rank-ace">AWP ACE</span><span class="kd">CD 0.9-2.1</span><span class="trend trend-none" aria-hidden="true"></span>
+            <span class="skills">
+              <span class="weapon-chip level-ace"><img src="assets/icons/awp.svg" alt="AWP" /><i>A</i></span>
+              <span class="weapon-chip level-intermediate"><img src="assets/icons/rifle.svg" alt="Rifle" /><i>INT</i></span>
+              <span class="weapon-chip level-meh"><img src="assets/icons/deagle.svg" alt="Deagle" /><i>MEH</i></span>
+              <span class="weapon-chip level-intermediate"><img src="assets/icons/usp.svg" alt="USP" /><i>INT</i></span>
+              <span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>46%</i></span>
+            </span>
+          </li>
+          <li class="rank-item tier-intermediate">
+            <span class="pos pos-photo"><img src="Zils.png" alt="Zils" /><b>8</b></span><span class="nick">Zils</span><span class="rank-tag rank-intermediate">FULL INTERMEDIATE</span><span class="kd">CD 0.7-1.7</span><span class="trend trend-none" aria-hidden="true"></span>
+            <span class="skills">
+              <span class="weapon-chip level-intermediate"><img src="assets/icons/awp.svg" alt="AWP" /><i>INT</i></span>
+              <span class="weapon-chip level-intermediate"><img src="assets/icons/rifle.svg" alt="Rifle" /><i>INT</i></span>
+              <span class="weapon-chip level-meh"><img src="assets/icons/deagle.svg" alt="Deagle" /><i>MEH</i></span>
+              <span class="weapon-chip level-meh"><img src="assets/icons/usp.svg" alt="USP" /><i>MEH</i></span>
+              <span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>13%</i></span>
+            </span>
+          </li>
+          <li class="rank-item tier-open">
+            <span class="pos">9</span><span class="nick">Svobodno</span><span class="rank-tag rank-open">OPEN SLOT</span><span class="kd">-</span><span class="trend trend-none" aria-hidden="true"></span>
+            <span class="skills">
+              <span class="weapon-chip level-open"><img src="assets/icons/awp.svg" alt="AWP" /><i>--</i></span>
+              <span class="weapon-chip level-open"><img src="assets/icons/rifle.svg" alt="Rifle" /><i>--</i></span>
+              <span class="weapon-chip level-open"><img src="assets/icons/deagle.svg" alt="Deagle" /><i>--</i></span>
+              <span class="weapon-chip level-open"><img src="assets/icons/usp.svg" alt="USP" /><i>--</i></span>
+              <span class="weapon-chip level-open headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>--</i></span>
+            </span>
+          </li>
+          <li class="rank-item tier-open">
+            <span class="pos">10</span><span class="nick">Svobodno</span><span class="rank-tag rank-open">OPEN SLOT</span><span class="kd">-</span><span class="trend trend-none" aria-hidden="true"></span>
+            <span class="skills">
+              <span class="weapon-chip level-open"><img src="assets/icons/awp.svg" alt="AWP" /><i>--</i></span>
+              <span class="weapon-chip level-open"><img src="assets/icons/rifle.svg" alt="Rifle" /><i>--</i></span>
+              <span class="weapon-chip level-open"><img src="assets/icons/deagle.svg" alt="Deagle" /><i>--</i></span>
+              <span class="weapon-chip level-open"><img src="assets/icons/usp.svg" alt="USP" /><i>--</i></span>
+              <span class="weapon-chip level-open headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>--</i></span>
+            </span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="leaderboard tab-panel" data-tab-panel="awp">
+        <div class="leaderboard-head">
+          <h2>AWP Tiers</h2>
+          <span>AWP-only ranking list</span>
+        </div>
+        <ol class="rank-list">
+          <li class="rank-item tier-master"><span class="pos pos-photo"><img src="Nurikkk.jpg" alt="Nurikkk" /><b>1</b></span><span class="nick">Nurikkk</span><span class="rank-tag rank-master">AWP MASTER</span><span class="kd">CD 2.3-3.1</span><span class="skills"><span class="weapon-chip level-master"><img src="assets/icons/awp.svg" alt="AWP" /><i>M</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>34%</i></span></span></li>
+          <li class="rank-item tier-grandmaster"><span class="pos pos-photo"><img src="soul.jpg" alt="Soul" /><b>2</b></span><span class="nick">Soul</span><span class="rank-tag rank-grandmaster">AWP GRANDMASTER</span><span class="kd">CD 1.5-2.8</span><span class="skills"><span class="weapon-chip level-grandmaster"><img src="assets/icons/awp.svg" alt="AWP" /><i>GM</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>21%</i></span></span></li>
+          <li class="rank-item tier-grandmaster"><span class="pos pos-photo"><img src="Zakon4ick.png" alt="Zakon4ick" /><b>3</b></span><span class="nick">Zakon4ick</span><span class="rank-tag rank-grandmaster">AWP GRANDMASTER</span><span class="kd">CD 1.1-2.3</span><span class="skills"><span class="weapon-chip level-grandmaster"><img src="assets/icons/awp.svg" alt="AWP" /><i>GM</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>25%</i></span></span></li>
+          <li class="rank-item tier-grandmaster"><span class="pos pos-photo"><img src="China.png" alt="China" /><b>4</b></span><span class="nick">China</span><span class="rank-tag rank-grandmaster">AWP GRANDMASTER</span><span class="kd">CD 1.0-2.2</span><span class="skills"><span class="weapon-chip level-grandmaster"><img src="assets/icons/awp.svg" alt="AWP" /><i>GM</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>19%</i></span></span></li>
+          <li class="rank-item tier-grandmaster"><span class="pos pos-photo"><img src="Abdurahmet.png" alt="Abdurahmet" /><b>5</b></span><span class="nick">Abdurahmet</span><span class="rank-tag rank-grandmaster">AWP GRANDMASTER</span><span class="kd">CD 0.9-2.1</span><span class="skills"><span class="weapon-chip level-grandmaster"><img src="assets/icons/awp.svg" alt="AWP" /><i>GM</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>46%</i></span></span></li>
+          <li class="rank-item tier-intermediate"><span class="pos pos-photo"><img src="W1nters.png" alt="W1nters" /><b>6</b></span><span class="nick">W1nters</span><span class="rank-tag rank-intermediate">AWP INTERMEDIATE</span><span class="kd">CD 1.3-2.9</span><span class="skills"><span class="weapon-chip level-intermediate"><img src="assets/icons/awp.svg" alt="AWP" /><i>INT</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>32%</i></span></span></li>
+          <li class="rank-item tier-intermediate"><span class="pos pos-photo"><img src="oligarh.png" alt="Oligarh" /><b>7</b></span><span class="nick">Oligarh</span><span class="rank-tag rank-intermediate">AWP INTERMEDIATE</span><span class="kd">CD 1.4-2.4</span><span class="skills"><span class="weapon-chip level-intermediate"><img src="assets/icons/awp.svg" alt="AWP" /><i>INT</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>43%</i></span></span></li>
+          <li class="rank-item tier-intermediate"><span class="pos pos-photo"><img src="Zils.png" alt="Zils" /><b>8</b></span><span class="nick">Zils</span><span class="rank-tag rank-intermediate">AWP INTERMEDIATE</span><span class="kd">CD 0.7-1.7</span><span class="skills"><span class="weapon-chip level-intermediate"><img src="assets/icons/awp.svg" alt="AWP" /><i>INT</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>13%</i></span></span></li>
+          <li class="rank-item tier-open"><span class="pos">9</span><span class="nick">Svobodno</span><span class="rank-tag rank-open">OPEN SLOT</span><span class="kd">-</span><span class="skills"><span class="weapon-chip level-open"><img src="assets/icons/awp.svg" alt="AWP" /><i>--</i></span></span></li>
+          <li class="rank-item tier-open"><span class="pos">10</span><span class="nick">Svobodno</span><span class="rank-tag rank-open">OPEN SLOT</span><span class="kd">-</span><span class="skills"><span class="weapon-chip level-open"><img src="assets/icons/awp.svg" alt="AWP" /><i>--</i></span></span></li>
+        </ol>
+      </section>
+
+      <section class="leaderboard tab-panel" data-tab-panel="rifle">
+        <div class="leaderboard-head">
+          <h2>Rifle Tiers</h2>
+          <span>Rifle-only ranking list</span>
+        </div>
+        <ol class="rank-list">
+          <li class="rank-item tier-master"><span class="pos pos-photo"><img src="soul.jpg" alt="Soul" /><b>1</b></span><span class="nick">Soul</span><span class="rank-tag rank-master">RIFLE MASTER</span><span class="kd">CD 1.5-2.8</span><span class="skills"><span class="weapon-chip level-master"><img src="assets/icons/rifle.svg" alt="Rifle" /><i>M</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>21%</i></span></span></li>
+          <li class="rank-item tier-grandmaster"><span class="pos pos-photo"><img src="Nurikkk.jpg" alt="Nurikkk" /><b>2</b></span><span class="nick">Nurikkk</span><span class="rank-tag rank-grandmaster">RIFLE GRANDMASTER</span><span class="kd">CD 2.3-3.1</span><span class="skills"><span class="weapon-chip level-grandmaster"><img src="assets/icons/rifle.svg" alt="Rifle" /><i>GM</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>34%</i></span></span></li>
+          <li class="rank-item tier-grandmaster"><span class="pos pos-photo"><img src="W1nters.png" alt="W1nters" /><b>3</b></span><span class="nick">W1nters</span><span class="rank-tag rank-grandmaster">RIFLE GRANDMASTER</span><span class="kd">CD 1.3-2.9</span><span class="skills"><span class="weapon-chip level-grandmaster"><img src="assets/icons/rifle.svg" alt="Rifle" /><i>GM</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>32%</i></span></span></li>
+          <li class="rank-item tier-grandmaster"><span class="pos pos-photo"><img src="oligarh.png" alt="Oligarh" /><b>4</b></span><span class="nick">Oligarh</span><span class="rank-tag rank-grandmaster">RIFLE GRANDMASTER</span><span class="kd">CD 1.4-2.4</span><span class="skills"><span class="weapon-chip level-grandmaster"><img src="assets/icons/rifle.svg" alt="Rifle" /><i>GM</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>43%</i></span></span></li>
+          <li class="rank-item tier-grandmaster"><span class="pos pos-photo"><img src="Abdurahmet.png" alt="Abdurahmet" /><b>5</b></span><span class="nick">Abdurahmet</span><span class="rank-tag rank-grandmaster">RIFLE GRANDMASTER</span><span class="kd">CD 0.9-2.1</span><span class="skills"><span class="weapon-chip level-grandmaster"><img src="assets/icons/rifle.svg" alt="Rifle" /><i>GM</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>46%</i></span></span></li>
+          <li class="rank-item tier-intermediate"><span class="pos pos-photo"><img src="Zakon4ick.png" alt="Zakon4ick" /><b>6</b></span><span class="nick">Zakon4ick</span><span class="rank-tag rank-intermediate">RIFLE INTERMEDIATE</span><span class="kd">CD 1.1-2.3</span><span class="skills"><span class="weapon-chip level-intermediate"><img src="assets/icons/rifle.svg" alt="Rifle" /><i>INT</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>25%</i></span></span></li>
+          <li class="rank-item tier-intermediate"><span class="pos pos-photo"><img src="China.png" alt="China" /><b>7</b></span><span class="nick">China</span><span class="rank-tag rank-intermediate">RIFLE INTERMEDIATE</span><span class="kd">CD 1.0-2.2</span><span class="skills"><span class="weapon-chip level-intermediate"><img src="assets/icons/rifle.svg" alt="Rifle" /><i>INT</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>19%</i></span></span></li>
+          <li class="rank-item tier-intermediate"><span class="pos pos-photo"><img src="Zils.png" alt="Zils" /><b>8</b></span><span class="nick">Zils</span><span class="rank-tag rank-intermediate">RIFLE INTERMEDIATE</span><span class="kd">CD 0.7-1.7</span><span class="skills"><span class="weapon-chip level-intermediate"><img src="assets/icons/rifle.svg" alt="Rifle" /><i>INT</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>13%</i></span></span></li>
+          <li class="rank-item tier-open"><span class="pos">9</span><span class="nick">Svobodno</span><span class="rank-tag rank-open">OPEN SLOT</span><span class="kd">-</span><span class="skills"><span class="weapon-chip level-open"><img src="assets/icons/rifle.svg" alt="Rifle" /><i>--</i></span></span></li>
+          <li class="rank-item tier-open"><span class="pos">10</span><span class="nick">Svobodno</span><span class="rank-tag rank-open">OPEN SLOT</span><span class="kd">-</span><span class="skills"><span class="weapon-chip level-open"><img src="assets/icons/rifle.svg" alt="Rifle" /><i>--</i></span></span></li>
+        </ol>
+      </section>
+
+      <section class="leaderboard tab-panel" data-tab-panel="deagle">
+        <div class="leaderboard-head">
+          <h2>Deagle Tiers</h2>
+          <span>Deagle-only ranking list</span>
+        </div>
+        <ol class="rank-list">
+          <li class="rank-item tier-master"><span class="pos pos-photo"><img src="soul.jpg" alt="Soul" /><b>1</b></span><span class="nick">Soul</span><span class="rank-tag rank-master">DEAGLE MASTER</span><span class="kd">CD 1.5-2.8</span><span class="skills"><span class="weapon-chip level-master"><img src="assets/icons/deagle.svg" alt="Deagle" /><i>M</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>21%</i></span></span></li>
+          <li class="rank-item tier-grandmaster"><span class="pos pos-photo"><img src="Nurikkk.jpg" alt="Nurikkk" /><b>2</b></span><span class="nick">Nurikkk</span><span class="rank-tag rank-grandmaster">DEAGLE GRANDMASTER</span><span class="kd">CD 2.3-3.1</span><span class="skills"><span class="weapon-chip level-grandmaster"><img src="assets/icons/deagle.svg" alt="Deagle" /><i>GM</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>34%</i></span></span></li>
+          <li class="rank-item tier-grandmaster"><span class="pos pos-photo"><img src="W1nters.png" alt="W1nters" /><b>3</b></span><span class="nick">W1nters</span><span class="rank-tag rank-grandmaster">DEAGLE GRANDMASTER</span><span class="kd">CD 1.3-2.9</span><span class="skills"><span class="weapon-chip level-grandmaster"><img src="assets/icons/deagle.svg" alt="Deagle" /><i>GM</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>32%</i></span></span></li>
+          <li class="rank-item tier-grandmaster"><span class="pos pos-photo"><img src="Abdurahmet.png" alt="Abdurahmet" /><b>4</b></span><span class="nick">Abdurahmet</span><span class="rank-tag rank-grandmaster">DEAGLE GRANDMASTER</span><span class="kd">CD 0.9-2.1</span><span class="skills"><span class="weapon-chip level-grandmaster"><img src="assets/icons/deagle.svg" alt="Deagle" /><i>GM</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>46%</i></span></span></li>
+          <li class="rank-item tier-intermediate"><span class="pos pos-photo"><img src="oligarh.png" alt="Oligarh" /><b>5</b></span><span class="nick">Oligarh</span><span class="rank-tag rank-intermediate">DEAGLE INTERMEDIATE</span><span class="kd">CD 1.4-2.4</span><span class="skills"><span class="weapon-chip level-intermediate"><img src="assets/icons/deagle.svg" alt="Deagle" /><i>INT</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>43%</i></span></span></li>
+          <li class="rank-item tier-intermediate"><span class="pos pos-photo"><img src="Zakon4ick.png" alt="Zakon4ick" /><b>6</b></span><span class="nick">Zakon4ick</span><span class="rank-tag rank-intermediate">DEAGLE INTERMEDIATE</span><span class="kd">CD 1.1-2.3</span><span class="skills"><span class="weapon-chip level-intermediate"><img src="assets/icons/deagle.svg" alt="Deagle" /><i>INT</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>25%</i></span></span></li>
+          <li class="rank-item tier-intermediate"><span class="pos pos-photo"><img src="China.png" alt="China" /><b>7</b></span><span class="nick">China</span><span class="rank-tag rank-intermediate">DEAGLE INTERMEDIATE</span><span class="kd">CD 1.0-2.2</span><span class="skills"><span class="weapon-chip level-intermediate"><img src="assets/icons/deagle.svg" alt="Deagle" /><i>INT</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>19%</i></span></span></li>
+          <li class="rank-item tier-intermediate"><span class="pos pos-photo"><img src="Zils.png" alt="Zils" /><b>8</b></span><span class="nick">Zils</span><span class="rank-tag rank-intermediate">DEAGLE INTERMEDIATE</span><span class="kd">CD 0.7-1.7</span><span class="skills"><span class="weapon-chip level-intermediate"><img src="assets/icons/deagle.svg" alt="Deagle" /><i>INT</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>13%</i></span></span></li>
+          <li class="rank-item tier-open"><span class="pos">9</span><span class="nick">Svobodno</span><span class="rank-tag rank-open">OPEN SLOT</span><span class="kd">-</span><span class="skills"><span class="weapon-chip level-open"><img src="assets/icons/deagle.svg" alt="Deagle" /><i>--</i></span></span></li>
+          <li class="rank-item tier-open"><span class="pos">10</span><span class="nick">Svobodno</span><span class="rank-tag rank-open">OPEN SLOT</span><span class="kd">-</span><span class="skills"><span class="weapon-chip level-open"><img src="assets/icons/deagle.svg" alt="Deagle" /><i>--</i></span></span></li>
+        </ol>
+      </section>
+
+      <section class="leaderboard tab-panel" data-tab-panel="usp">
+        <div class="leaderboard-head">
+          <h2>USP Tiers</h2>
+          <span>USP-only ranking list</span>
+        </div>
+        <ol class="rank-list">
+          <li class="rank-item tier-grandmaster"><span class="pos pos-photo"><img src="Nurikkk.jpg" alt="Nurikkk" /><b>1</b></span><span class="nick">Nurikkk</span><span class="rank-tag rank-grandmaster">USP GRANDMASTER</span><span class="kd">CD 2.3-3.1</span><span class="skills"><span class="weapon-chip level-grandmaster"><img src="assets/icons/usp.svg" alt="USP" /><i>GM</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>34%</i></span></span></li>
+          <li class="rank-item tier-grandmaster"><span class="pos pos-photo"><img src="soul.jpg" alt="Soul" /><b>2</b></span><span class="nick">Soul</span><span class="rank-tag rank-grandmaster">USP GRANDMASTER</span><span class="kd">CD 1.5-2.8</span><span class="skills"><span class="weapon-chip level-grandmaster"><img src="assets/icons/usp.svg" alt="USP" /><i>GM</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>21%</i></span></span></li>
+          <li class="rank-item tier-grandmaster"><span class="pos pos-photo"><img src="oligarh.png" alt="Oligarh" /><b>3</b></span><span class="nick">Oligarh</span><span class="rank-tag rank-grandmaster">USP GRANDMASTER</span><span class="kd">CD 1.4-2.4</span><span class="skills"><span class="weapon-chip level-grandmaster"><img src="assets/icons/usp.svg" alt="USP" /><i>GM</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>43%</i></span></span></li>
+          <li class="rank-item tier-grandmaster"><span class="pos pos-photo"><img src="Zakon4ick.png" alt="Zakon4ick" /><b>4</b></span><span class="nick">Zakon4ick</span><span class="rank-tag rank-grandmaster">USP GRANDMASTER</span><span class="kd">CD 1.1-2.3</span><span class="skills"><span class="weapon-chip level-grandmaster"><img src="assets/icons/usp.svg" alt="USP" /><i>GM</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>25%</i></span></span></li>
+          <li class="rank-item tier-grandmaster"><span class="pos pos-photo"><img src="Abdurahmet.png" alt="Abdurahmet" /><b>5</b></span><span class="nick">Abdurahmet</span><span class="rank-tag rank-grandmaster">USP GRANDMASTER</span><span class="kd">CD 0.9-2.1</span><span class="skills"><span class="weapon-chip level-grandmaster"><img src="assets/icons/usp.svg" alt="USP" /><i>GM</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>46%</i></span></span></li>
+          <li class="rank-item tier-intermediate"><span class="pos pos-photo"><img src="W1nters.png" alt="W1nters" /><b>6</b></span><span class="nick">W1nters</span><span class="rank-tag rank-intermediate">USP INTERMEDIATE</span><span class="kd">CD 1.3-2.9</span><span class="skills"><span class="weapon-chip level-intermediate"><img src="assets/icons/usp.svg" alt="USP" /><i>INT</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>32%</i></span></span></li>
+          <li class="rank-item tier-intermediate"><span class="pos pos-photo"><img src="China.png" alt="China" /><b>7</b></span><span class="nick">China</span><span class="rank-tag rank-intermediate">USP INTERMEDIATE</span><span class="kd">CD 1.0-2.2</span><span class="skills"><span class="weapon-chip level-intermediate"><img src="assets/icons/usp.svg" alt="USP" /><i>INT</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>19%</i></span></span></li>
+          <li class="rank-item tier-intermediate"><span class="pos pos-photo"><img src="Zils.png" alt="Zils" /><b>8</b></span><span class="nick">Zils</span><span class="rank-tag rank-intermediate">USP INTERMEDIATE</span><span class="kd">CD 0.7-1.7</span><span class="skills"><span class="weapon-chip level-intermediate"><img src="assets/icons/usp.svg" alt="USP" /><i>INT</i></span><span class="weapon-chip headshot-chip"><img src="assets/icons/hs.svg" alt="Headshot" /><i>13%</i></span></span></li>
+          <li class="rank-item tier-open"><span class="pos">9</span><span class="nick">Svobodno</span><span class="rank-tag rank-open">OPEN SLOT</span><span class="kd">-</span><span class="skills"><span class="weapon-chip level-open"><img src="assets/icons/usp.svg" alt="USP" /><i>--</i></span></span></li>
+          <li class="rank-item tier-open"><span class="pos">10</span><span class="nick">Svobodno</span><span class="rank-tag rank-open">OPEN SLOT</span><span class="kd">-</span><span class="skills"><span class="weapon-chip level-open"><img src="assets/icons/usp.svg" alt="USP" /><i>--</i></span></span></li>
+        </ol>
+      </section>
+
+      <section class="leaderboard tab-panel" data-tab-panel="duels">
+        <div class="leaderboard-head">
+          <h2>Duel Mode</h2>
+          <span>Empty duel ladder (coming soon)</span>
+        </div>
+        <ol class="rank-list">
+          <li class="rank-item tier-open"><span class="pos">1</span><span class="nick">Svobodno</span><span class="rank-tag rank-open">DUEL SLOT</span><span class="kd">-</span><span class="skills"><span class="weapon-chip level-open"><img src="assets/icons/duel.svg" alt="Duel" /><i>--</i></span></span></li>
+          <li class="rank-item tier-open"><span class="pos">2</span><span class="nick">Svobodno</span><span class="rank-tag rank-open">DUEL SLOT</span><span class="kd">-</span><span class="skills"><span class="weapon-chip level-open"><img src="assets/icons/duel.svg" alt="Duel" /><i>--</i></span></span></li>
+          <li class="rank-item tier-open"><span class="pos">3</span><span class="nick">Svobodno</span><span class="rank-tag rank-open">DUEL SLOT</span><span class="kd">-</span><span class="skills"><span class="weapon-chip level-open"><img src="assets/icons/duel.svg" alt="Duel" /><i>--</i></span></span></li>
+          <li class="rank-item tier-open"><span class="pos">4</span><span class="nick">Svobodno</span><span class="rank-tag rank-open">DUEL SLOT</span><span class="kd">-</span><span class="skills"><span class="weapon-chip level-open"><img src="assets/icons/duel.svg" alt="Duel" /><i>--</i></span></span></li>
+          <li class="rank-item tier-open"><span class="pos">5</span><span class="nick">Svobodno</span><span class="rank-tag rank-open">DUEL SLOT</span><span class="kd">-</span><span class="skills"><span class="weapon-chip level-open"><img src="assets/icons/duel.svg" alt="Duel" /><i>--</i></span></span></li>
+          <li class="rank-item tier-open"><span class="pos">6</span><span class="nick">Svobodno</span><span class="rank-tag rank-open">DUEL SLOT</span><span class="kd">-</span><span class="skills"><span class="weapon-chip level-open"><img src="assets/icons/duel.svg" alt="Duel" /><i>--</i></span></span></li>
+          <li class="rank-item tier-open"><span class="pos">7</span><span class="nick">Svobodno</span><span class="rank-tag rank-open">DUEL SLOT</span><span class="kd">-</span><span class="skills"><span class="weapon-chip level-open"><img src="assets/icons/duel.svg" alt="Duel" /><i>--</i></span></span></li>
+          <li class="rank-item tier-open"><span class="pos">8</span><span class="nick">Svobodno</span><span class="rank-tag rank-open">DUEL SLOT</span><span class="kd">-</span><span class="skills"><span class="weapon-chip level-open"><img src="assets/icons/duel.svg" alt="Duel" /><i>--</i></span></span></li>
+          <li class="rank-item tier-open"><span class="pos">9</span><span class="nick">Svobodno</span><span class="rank-tag rank-open">DUEL SLOT</span><span class="kd">-</span><span class="skills"><span class="weapon-chip level-open"><img src="assets/icons/duel.svg" alt="Duel" /><i>--</i></span></span></li>
+          <li class="rank-item tier-open"><span class="pos">10</span><span class="nick">Svobodno</span><span class="rank-tag rank-open">DUEL SLOT</span><span class="kd">-</span><span class="skills"><span class="weapon-chip level-open"><img src="assets/icons/duel.svg" alt="Duel" /><i>--</i></span></span></li>
+        </ol>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
